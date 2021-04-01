@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'NotoSans';
+  src: url(../assets/fonts/NotoSans-Regular.ttf);
+}
+
+:root {
+  --white: #fff;
+  --gray-100: rgb(243, 244, 246);
+  --gray-200: rgb(229, 231, 235);
+  --gray-300: rgb(209, 213, 219);
+  --gray-400: rgb(75, 85, 99);
+  --gray-500: rgb(17, 24, 39);
+  --blue: rgba(49, 110, 216, 1);
+  --blue-light: rgba(49, 110, 216, 0.8);
+  --blue-disabled: rgba(49, 110, 216, 0.5);
+  --yellow: rgb(245, 158, 11);
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --border-radius: 2px;
+}
+
+body {
+  font-family: NotoSans;
+}
+
+.container {
+  max-width: 680px;
+  margin: auto;
+  padding: 2rem;
+}

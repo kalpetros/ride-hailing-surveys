@@ -1,0 +1,23 @@
+.input {
+  display: grid;
+  input {
+    border: none;
+    border: 1px solid var(--gray-300);
+    border-radius: var(--border-radius);
+    padding: 0.8rem 1rem;
+    &:focus {
+      outline-color: var(--blue);
+    }
+  }
+  &__element {
+    display: grid;
+    position: relative;
+  }
+  &__label {
+    color: var(--gray-400);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+}

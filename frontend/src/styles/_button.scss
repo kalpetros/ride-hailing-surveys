@@ -1,0 +1,16 @@
+.button {
+  background-color: var(--blue);
+  color: var(--white);
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  border-radius: var(--border-radius);
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--blue-light);
+  }
+  &:disabled {
+    background-color: var(--blue-disabled);
+    cursor: not-allowed;
+  }
+}
