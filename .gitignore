@@ -1,5 +1,5 @@
 *.pyc
-db.sqlite
+db.sqlite3
 
 .cache/
 dist/
