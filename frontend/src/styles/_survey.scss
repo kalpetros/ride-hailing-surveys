@@ -1,0 +1,28 @@
+.Survey {
+  &__rating {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  &__rating_item {
+    background-color: #fff;
+    color: var(--gray-300);
+    padding: 1rem;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--blue-light);
+      color: var(--white);
+    }
+    &--selected {
+      background-color: var(--blue);
+      border: none;
+      color: var(--white);
+      &:hover {
+        background-color: var(--blue);
+      }
+    }
+  }
+}
