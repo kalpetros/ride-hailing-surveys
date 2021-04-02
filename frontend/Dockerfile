@@ -1,11 +1,10 @@
-FROM node:12-alpine
+FROM node:15-stretch
 
 WORKDIR /srv
 EXPOSE 1234
 
 # Let Docker cache dependencies
 COPY ./package.json ./
-COPY ./yarn.lock ./
 RUN yarn install
 
 COPY . /srv
