@@ -23,7 +23,7 @@ services:
       - ./frontend:/srv
       - node_modules:/srv/node_modules
     ports:
-      - "1234:8080"
+      - "8080:1234"
     environment:
      - NODE_ENV="development"
 
