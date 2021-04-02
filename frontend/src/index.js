@@ -23,7 +23,6 @@ const App = () => {
 
   useEffect(() => {
     // Initiate a get request passing a test user
-    // for the purposes of this assignment
     axios
       .get('http://localhost:8000/api/v1/surveys/', {
         params: { user: 'test@test.com' },
@@ -38,8 +37,7 @@ const App = () => {
   }, []);
 
   const submit = (data) => {
-    // Initiate a port request passing a test user
-    // for the purposes of this assignment
+    // Initiate a post request passing a test user
     let postData = {
       user: 'test@test.com',
       rating: rating,
