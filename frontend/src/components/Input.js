@@ -1,9 +1,18 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 export const Input = (props) => {
-  const { id, type, label, placeholder, value, onChange } = props;
+  const {
+    reference,
+    id,
+    name,
+    type,
+    label,
+    placeholder,
+    value,
+    defaultValue,
+    onChange,
+  } = props;
 
   return (
     <div className="input">
@@ -12,11 +21,12 @@ export const Input = (props) => {
       </label>
       <div className="input__element">
         <input
+          ref={reference}
           id={id}
+          name={id}
           type={type}
           placeholder={placeholder}
-          value={value}
-          onChange={onChange}
+          defaultValue={defaultValue}
         />
       </div>
     </div>
@@ -24,19 +34,21 @@ export const Input = (props) => {
 };
 
 Input.defaultProps = {
+  reference: {},
   id: '',
+  name: '',
   type: 'text',
   label: '',
   placeholder: '',
-  value: '',
-  onChange: () => {},
+  defaultValue: '',
 };
 
 Input.propTypes = {
+  reference: PropTypes.func,
   id: PropTypes.string.isRequired,
+  name: PropTypes.string,
   type: PropTypes.oneOf(['text', 'number']),
   label: PropTypes.string,
   placeholder: PropTypes.string,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
+  defaultValue: PropTypes.string,
 };
