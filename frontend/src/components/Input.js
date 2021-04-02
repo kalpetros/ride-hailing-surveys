@@ -9,9 +9,7 @@ export const Input = (props) => {
     type,
     label,
     placeholder,
-    value,
     defaultValue,
-    onChange,
   } = props;
 
   return (
@@ -23,7 +21,7 @@ export const Input = (props) => {
         <input
           ref={reference}
           id={id}
-          name={id}
+          name={name}
           type={type}
           placeholder={placeholder}
           defaultValue={defaultValue}
