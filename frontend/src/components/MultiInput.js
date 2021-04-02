@@ -22,7 +22,6 @@ export const MultiInput = (props) => {
           type={type}
           placeholder={placeholder}
           value={value}
-          onChange={onChange}
         />
         <label htmlFor={id} className="MultiInput__label">
           {label}
