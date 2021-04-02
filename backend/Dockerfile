@@ -8,5 +8,8 @@ RUN apk add --update alpine-sdk
 # Copy requirements.txt before code to let Docker cache Python dependencies
 COPY ./requirements.txt .
 RUN pip3 install -r requirements.txt
+RUN apk add --update --no-cache \
+    graphviz \
+    ttf-freefont
 
 COPY . /srv
